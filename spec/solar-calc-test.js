@@ -2,6 +2,12 @@ import { Triangle } from './../src/triangle.js';
 
 describe('age-calc', function () {
 
+  it('should test whether input determines the correct age
+  , function () {
+
+    expect(triangle.side3).not.toEqual(6);
+  });
+
   it('should test whether the mercury age calculator increases the input age to ~4.16%', function () {
 
     expect(triangle.side3).not.toEqual(6);
