@@ -5,6 +5,8 @@ export class Person {
     this.birthday = birthday;
     this.age = 0;
     this.lifeExpectancy = 72;
+    this.newAge;
+    this.newlifeExpectancy;
   }
   calcAge(){
     const today = new Date();
@@ -13,23 +15,23 @@ export class Person {
   }
 
   calcMercury(){
-    const mercuryAge = this.age / .24;
-    return mercuryAge
+    this.newAge = this.age / .24;
+    this.newLifeExpectancy = this.lifeExpectancy / .24;
   }
 
   calcVenus(){
-    const venusAge = this.age / .62;
-    return venusAge
+    this.newAge = this.age / .62;
+    this.newLifeExpectancy = this.lifeExpectancy / .62;
   }
 
   calcMars(){
-    const marsAge = this.age / 1.88;
-    return marsAge
+    this.newAge = this.age / 1.88;
+    this.newLifeExpectancy = this.lifeExpectancy / 1.88;
   }
 
   calcJupiter(){
-    const jupiterAge = this.age / 11.86;
-    return jupiterAge
+    this.newAge = this.age / 11.86;
+    this.newLifeExpectancy = this.lifeExpectancy / 11.86;
   }
 
   calcLifeExpectancy(){
@@ -40,6 +42,9 @@ export class Person {
       this.lifeExpectancy = 76;
     }
 
+
+  }
+  yearsTillDead(){
 
   }
 
