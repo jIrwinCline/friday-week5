@@ -43,14 +43,14 @@ describe('Person', function () {
     });
 
   it('should test if the years till they hit life expectancy will display properly and change for each planets years', function () {
-    // user.calcMercury()
-    // expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / .24);
-    // user.calcVenus()
-    // expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / .62);
-    // user.calcMars()
-    // expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / 1.88);
-    // user.calcJupiter()
-    // expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / 11.86);
+    user.calcMercury()
+    expect(user.newLifeExpectancy + 1).toEqual(user.lifeExpectancy / .24);
+    user.calcVenus()
+    expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / .62);
+    user.calcMars()
+    expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / 1.88);
+    user.calcJupiter()
+    expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / 11.86);
 
 
 
