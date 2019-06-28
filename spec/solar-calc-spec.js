@@ -1,15 +1,15 @@
 import { Person } from './../src/solar-calc.js';
 
 describe('Person', function () {
+  const user = new Person('Jake', 'male', 'February 26, 1995')
 
   it('should test whether input determines the correct age', function () {
-    const user = new Person('Jake', 'male', 'February 26, 1995')
     user.calcAge()
-    expect(user.age).toEqual(21);
+    expect(user.age).toEqual(24);
   });
 
   it('should test whether the mercury age calculator increases the input age to ~4.16%', function () {
-
+    expect(user.calcMercury() + 1).toEqual(user.age / .24);
   });
 
   it('should test whether the venus age calculator increase the input age to 1.6%%', function () {
