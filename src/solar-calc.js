@@ -1,5 +1,5 @@
-export class person {
-  constructor (name,gender){
+export class Person {
+  constructor (name,gender,birthday){
     this.name = name;
     this.gender = gender;
     this.birthday = birthday;
@@ -9,7 +9,7 @@ export class person {
   calcAge(){
     const today = new Date();
     const birth = new Date(this.birthday);
-    this.age = today - birth;
+    this.age = today.getYear() - birth.getYear();
   }
 
   calcMercury(){
@@ -40,7 +40,7 @@ export class person {
       const lifeExpectancy = 76;
     }
 
-    return
+    return lifeExpectancy
   }
 
 }

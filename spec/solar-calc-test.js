@@ -4,8 +4,9 @@ describe('age-calc', function () {
 
   it('should test whether input determines the correct age
   , function () {
-
-    expect(triangle.side3).not.toEqual(6);
+    const user = new Person('Jake', 'male', 'February 26, 1995')
+    user.calcAge()
+    expect(this.age).toEqual(24);
   });
 
   it('should test whether the mercury age calculator increases the input age to ~4.16%', function () {
