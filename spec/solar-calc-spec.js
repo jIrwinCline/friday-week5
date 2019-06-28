@@ -13,23 +13,31 @@ describe('Person', function () {
   });
 
   it('should test whether the venus age calculator increase the input age to 1.6%%', function () {
-    expect(user.calcVenus()  + 1).toEqual(user.age / .62);
+    expect(user.calcVenus()).toEqual(user.age / .62);
 
 
 
     });
   it('should test whether the mars age calculator decrease the input age to 53.19%', function () {
-    expect(user.calcMars() + 1).toEqual(user.age / 1.88);
+    expect(user.calcMars()).toEqual(user.age / 1.88);
 
 
 
     });
   it('should test whether the Jupiter age calculator decrease the input age to 8.4%', function () {
-    expect(user.calcJupiter() + 1).toEqual(user.age / 11.86);
+    expect(user.calcJupiter()).toEqual(user.age / 11.86);
 
 
 
     });
+
+  it('should test if the life expectancy is set correctly by the users gender', function () {
+    user.calcLifeExpectancy();
+    expect(user.lifeExpectancy).toEqual(73);
+
+
+    });
+
   it('should test if the years till they hit life expectancy will display properly and change for each planets years', function () {
     // expect().toEqual();
 
