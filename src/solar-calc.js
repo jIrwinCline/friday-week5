@@ -7,6 +7,8 @@ export class Person {
     this.lifeExpectancy = 72;
     this.newAge;
     this.newlifeExpectancy;
+    this.yearsTillDead;
+    this.newTillDead;
   }
   calcAge(){
     const today = new Date();
@@ -45,7 +47,16 @@ export class Person {
 
   }
   yearsTillDead(){
+    if(this.lifeExpectancy > this.age){
+    this.yearsTillDead = this.lifeExpectancy - this.age;
+    this.newTillDead = this.newLifeExpectancy - this.newAge;
+    return 'you have ' + this.newTillDead + ' years until you reach life expectancy on this planet.'
+    } else {
+      let pastDead = this.age - this.lifeExpectancy;
+      this.yearsTillDead = this.lifeExpectancy - this.age;
+      this.newTillDead = this.newLifeExpectancy - this.newAge;
+      return 'You have lived ' + pastDead + ' years past you life expectancy on this planet. Congratulations'
+    }
 
   }
-
 }

@@ -44,7 +44,7 @@ describe('Person', function () {
 
   it('should test if the years till they hit life expectancy will display properly and change for each planets years', function () {
     user.calcMercury()
-    expect(user.newLifeExpectancy + 1).toEqual(user.lifeExpectancy / .24);
+    expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / .24);
     user.calcVenus()
     expect(user.newLifeExpectancy).toEqual(user.lifeExpectancy / .62);
     user.calcMars()
@@ -55,7 +55,10 @@ describe('Person', function () {
 
 
     });
-  it('should test if the the output informs users how many years past the life expectancy they have lived', function () {
+  it('should test if the function determines how many years past the life expectancy they have lived', function () {
+      user.calcMercury()
+      expect(user.yearsTillDead()).toEqual("you dont have 200 years until you reach life expectancy on this planet.");
+
     // expect().toEqual();
 
 
