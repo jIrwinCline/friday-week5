@@ -34,13 +34,13 @@ export class Person {
 
   calcLifeExpectancy(){
     if(this.gender == 'male'){
-      const lifeExpectancy = 72;
+      this.lifeExpectancy = 72;
 
     } else {
-      const lifeExpectancy = 76;
+      this.lifeExpectancy = 76;
     }
 
-    return lifeExpectancy
+
   }
 
 }
