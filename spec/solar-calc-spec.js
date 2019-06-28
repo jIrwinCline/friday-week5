@@ -57,9 +57,7 @@ describe('Person', function () {
     });
   it('should test if the function determines how many years past the life expectancy they have lived', function () {
       user.calcMercury()
-      expect(user.yearsTillDead()).toEqual("you dont have 200 years until you reach life expectancy on this planet.");
-
-    // expect().toEqual();
+      expect(user.yearsTillDead()).toEqual("you have 200 years until you reach life expectancy on this planet.");
 
 
 

@@ -3,8 +3,8 @@ export class Person {
     this.name = name;
     this.gender = gender;
     this.birthday = birthday;
-    this.age = 0;
-    this.lifeExpectancy = 72;
+    this.age;
+    this.lifeExpectancy;
     this.newAge;
     this.newlifeExpectancy;
     this.yearsTillDead;
@@ -59,4 +59,5 @@ export class Person {
     }
 
   }
+  
 }
