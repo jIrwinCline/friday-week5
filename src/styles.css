@@ -1,0 +1,42 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.topSpace {
+  margin-top: 100px;
+  padding-top: 15px
+}
+.bottomSpace {
+  margin-top: 50px;
+  padding-top: 15px
+}
+.planet {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.earth {
+
+}
+
+.mercury {
+  height: 50px;
+  width: 50px;
+}
+
+.venus {
+  height: 75px;
+  width: 75px;
+}
+
+.mars {
+  height: 90px;
+  width: 90px;
+}
+
+.jupiter {
+  height: 160px;
+  width: 160px;
+}
