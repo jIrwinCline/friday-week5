@@ -53,14 +53,14 @@ export class Person {
   }
   yearsTillDead(){
     if(this.lifeExpectancy > this.age){
-    this.yearsTillDead = this.lifeExpectancy - this.age;
-    this.newTillDead = this.newLifeExpectancy - this.newAge;
-    return 'you have ' + this.newTillDead + ' more years until you reach life expectancy on this planet.'
-    } else {
-      let pastDead = this.age - this.lifeExpectancy;
       this.yearsTillDead = this.lifeExpectancy - this.age;
       this.newTillDead = this.newLifeExpectancy - this.newAge;
-      return 'You have lived ' + pastDead + ' years past your life expectancy on this planet. Congratulations'
+      return 'you have ' + this.newTillDead + ' more years until you reach life expectancy on this planet.';
+    } else {
+        let pastDead = this.age - this.lifeExpectancy;
+        this.yearsTillDead = this.lifeExpectancy - this.age;
+        this.newTillDead = this.newLifeExpectancy - this.newAge;
+        return 'You have lived ' + pastDead + ' years past your life expectancy on this planet. Congratulations';
     }
 
   }

@@ -7,8 +7,7 @@ import { Person } from './solar-calc.js';
 $(document).ready(function () {
   $("form").submit(function(event) {
     event.preventDefault();
-    let expectancy = '';
-    let user = new Person($('input#name').val(),$('input[name="gender"]:checked').val(),$('input#birthday').val());
+    const user = new Person($('input#name').val(),$('input[name="gender"]:checked').val(),$('input#birthday').val());
     user.calcAge();
     console.log(user);
     user.calcLifeExpectancy();
