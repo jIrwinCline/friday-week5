@@ -16,6 +16,11 @@ export class Person {
     this.age = today.getYear() - birth.getYear();
   }
 
+  calcEarth(){
+    this.newAge = this.age;
+    this.newLifeExpectancy = this.lifeExpectancy;
+  }
+
   calcMercury(){
     this.newAge = this.age / .24;
     this.newLifeExpectancy = this.lifeExpectancy / .24;
@@ -50,14 +55,14 @@ export class Person {
     if(this.lifeExpectancy > this.age){
     this.yearsTillDead = this.lifeExpectancy - this.age;
     this.newTillDead = this.newLifeExpectancy - this.newAge;
-    return 'you have ' + this.newTillDead + ' years until you reach life expectancy on this planet.'
+    return 'you have ' + this.newTillDead + ' more years until you reach life expectancy on this planet.'
     } else {
       let pastDead = this.age - this.lifeExpectancy;
       this.yearsTillDead = this.lifeExpectancy - this.age;
       this.newTillDead = this.newLifeExpectancy - this.newAge;
-      return 'You have lived ' + pastDead + ' years past you life expectancy on this planet. Congratulations'
+      return 'You have lived ' + pastDead + ' years past your life expectancy on this planet. Congratulations'
     }
 
   }
-  
+
 }
