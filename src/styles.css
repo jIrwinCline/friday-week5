@@ -1,3 +1,7 @@
+.custom-container{
+    width: 2000px;
+}
+
 .center {
   text-align: center;
   display: flex;
