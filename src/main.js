@@ -14,32 +14,32 @@ $(document).ready(function () {
     $("#mercury").click(function(){
       user.calcMercury();
       $('.result-mercury').append('Your age in Mercury years is: ' + user.newAge + '<hr>');
-      $('.result-mercury').append(user.yearsTillDead());
+      $('.result-mercury').append(user.timeLeft());
     });
     $("#venus").click(function(){
       user.calcVenus();
       console.log(user);
       $('.result-venus').append('Your age in Venus years is: ' + user.newAge + '<hr>');
-      $('.result-venus').append(user.yearsTillDead());
+      $('.result-venus').append(user.timeLeft());
 
     });
     $("#earth").click(function(){
       user.calcEarth();
       console.log(user);
       $('.result-earth').append('Your age in Earth years is: ' + user.age + '<hr>');
-      $('.result-earth').append(user.yearsTillDead());
+      $('.result-earth').append(user.timeLeft());
 
     });
     $("#mars").click(function(){
       user.calcMars();
       $('.result-mars').append('Your age in Mars years is: ' + user.newAge + '<hr>');
-      $('.result-mars').append(user.yearsTillDead());
+      $('.result-mars').append(user.timeLeft());
 
     });
     $("#jupiter").click(function(){
       user.calcJupiter();
       $('.result-jupiter').append('Your age in Jupiter years is: ' + user.newAge + '<hr>');
-      $('.result-jupiter').append(user.yearsTillDead());
+      $('.result-jupiter').append(user.timeLeft());
 
     });
   });

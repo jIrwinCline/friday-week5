@@ -51,7 +51,7 @@ export class Person {
 
 
   }
-  yearsTillDead(){
+  timeLeft(){
     if(this.lifeExpectancy > this.age){
       this.yearsTillDead = this.lifeExpectancy - this.age;
       this.newTillDead = this.newLifeExpectancy - this.newAge;
